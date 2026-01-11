@@ -11,7 +11,7 @@ const HeroSection = () => {
 
   return (
     <section className="bg-rose-soft relative overflow-hidden">
-      <div className="container-custom px-4 sm:px-6 lg:px-0 pt-16 sm:pt-20 lg:pt-14 pb-8 lg:pb-0 w-full">
+      <div className="container-custom px-6 sm:px-8 lg:px-0 pt-16 sm:pt-20 lg:pt-14 pb-8 lg:pb-0 w-full">
 
 
 
