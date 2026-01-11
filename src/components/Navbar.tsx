@@ -33,10 +33,12 @@ const Navbar = () => {
         isScrolled ? "bg-card/95 backdrop-blur-md shadow-soft" : "bg-transparent"
       }`}
     >
-      <div className="container-custom py-4">
+      <div className="container-custom py-4 px-4 sm:px-6">
         <div className="flex items-center justify-between">
-          <a href="#" className="font-display text-xl md:text-2xl font-semibold text-green-dark">
-            Atendimento de segunda a sexta.
+          <a
+  href="#"
+  className="font-display text-sm sm:text-base md:text-2xl font-semibold text-green-dark leading-tight"
+> Atendimento de segunda a sexta.
           </a>
 
           {/* Desktop Navigation */}
