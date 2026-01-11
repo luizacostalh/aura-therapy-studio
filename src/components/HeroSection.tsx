@@ -27,7 +27,8 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="mb-2 flex justify-center"
+              className="mb-2 flex justify-center -translate-y-3 sm:translate-y-0"
+
             >
               <span className="inline-block whitespace-nowrap px-4 py-2 bg-card rounded-full text-green-medium text-xs sm:text-sm font-medium shadow-soft">
                 CREFITO - 415623-F
@@ -39,7 +40,8 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="font-display text-xl sm:text-4xl lg:text-6xl font-semibold text-green-dark leading-tight whitespace-nowrap"
+              className="font-display text-xl sm:text-4xl lg:text-6xl font-semibold text-green-dark leading-tight whitespace-nowrap -translate-y-3 sm:translate-y-0"
+
             >
               Dra. Tayná Santos
             </motion.h1>
@@ -57,7 +59,8 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 2020 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="flex justify-center"
+              className="flex justify-center -translate-y-3 sm:translate-y-0"
+
             >
               <a
                 href={whatsappLink}
