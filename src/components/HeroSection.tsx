@@ -11,7 +11,8 @@ const HeroSection = () => {
 
   return (
     <section className="bg-rose-soft relative overflow-hidden">
-      <div className="container-custom pt-10 sm:pt-14 lg:pt-20 pb-0 w-full">
+      <div className="container-custom px-4 sm:px-6 lg:px-0 pt-16 sm:pt-20 lg:pt-24 pb-8 w-full">
+
 
         <div className="grid grid-cols-2 gap-8 lg:gap-16 items-center">
 
@@ -20,7 +21,8 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-left flex flex-col justify-center"
+            className="text-left flex flex-col justify-center pl-2 sm:pl-0"
+
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
