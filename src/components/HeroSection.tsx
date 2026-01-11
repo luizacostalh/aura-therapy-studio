@@ -95,9 +95,9 @@ const HeroSection = () => {
   xl:max-w-xl
   h-auto
   object-cover
-  translate-y-2
+  translate-y-4
   sm:translate-y-0
-  -translate-x-6
+  -translate-x-12
   sm:translate-x-0
   drop-shadow-[0_15px_35px_rgba(0,0,0,0.18)]
 "
