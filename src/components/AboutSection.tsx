@@ -5,8 +5,8 @@ const AboutSection = () => {
   const features = [
     {
       icon: Award,
-      title: "Experiência",
-      description: "Formada em 2024, com foco em técnicas modernas e baseadas em evidências científicas",
+      title: "Experiência Profissional",
+      description: "Atuação focada em reabilitação funcional e qualidade de vida",
     },
     {
       icon: Heart,
@@ -44,7 +44,7 @@ const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-body text-lg mb-6 leading-relaxed">
-              Olá! Sou a <strong className="text-green-dark">Dra. Tayná Santos</strong>,fisioterapeuta formada pela Unigran, em 2024, atuando em Dourados – MS.
+              Olá! Sou a <strong className="text-green-dark">Dra. Tayná Santos</strong>, fisioterapeuta formada pela Unigran, em 2024, atuando em Dourados – MS.
             </p>
             <p className="text-body text-lg mb-6 leading-relaxed">
               Meu trabalho é baseado em um atendimento humanizado e individualizado, focado na recuperação funcional, na qualidade de vida e no bem-estar de cada paciente.</p>
