@@ -38,7 +38,7 @@ const Navbar = () => {
           <a
   href="#"
   className="font-display text-sm sm:text-base md:text-2xl font-semibold text-green-dark leading-tight"
-> Atendimento de segunda a sexta.
+> Fisioterapia Domiciliar
           </a>
 
           {/* Desktop Navigation */}
