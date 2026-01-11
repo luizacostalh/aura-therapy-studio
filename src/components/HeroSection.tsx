@@ -10,8 +10,9 @@ const HeroSection = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section className="min-h-[85vh] bg-rose-soft relative overflow-hidden flex items-end">
-      <div className="container-custom pt-24 pb-0 w-full">
+    <section className="min-h-[70vh] lg:min-h-[85vh] bg-rose-soft relative overflow-hidden flex items-end">
+<div className="container-custom pt-12 sm:pt-16 lg:pt-24 pb-0 w-full">
+
         
         {/* 🔥 GRID SEM EMPILHAR */}
         <div className="grid grid-cols-2 gap-6 md:gap-12 items-end">
