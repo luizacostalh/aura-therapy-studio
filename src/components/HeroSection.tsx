@@ -10,58 +10,54 @@ const HeroSection = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section className="bg-rose-soft relative overflow-hidden min-h-[80vh] lg:min-h-0">
-      <div className="container-custom px-6 sm:px-8 lg:px-0 pt-16 sm:pt-20 lg:pt-14 pb-8 lg:pb-0 w-full">
+    <section className="bg-rose-soft relative overflow-hidden">
+      {/* ↓ menos altura no MOBILE */}
+      <div className="container-custom px-6 sm:px-8 lg:px-0 pt-12 sm:pt-20 lg:pt-14 pb-4 sm:pb-8 lg:pb-0 w-full">
 
-        {/* GRID — proporção ajustada */}
-        <div className="grid grid-cols-2 gap-6 sm:gap-10 lg:gap-24 items-center lg:items-center">
+        <div className="grid grid-cols-2 gap-4 sm:gap-10 lg:gap-24 items-end lg:items-center">
 
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-center flex flex-col justify-center items-center px-2 sm:px-0 space-y-5"
-
+            className="text-center flex flex-col justify-center items-center px-1 sm:px-0 space-y-3 sm:space-y-5"
           >
-            {/* CREFITO */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="mb-3 sm:mb-4 flex justify-center"
-
+              className="mb-2 flex justify-center"
             >
-              <span className="inline-block whitespace-nowrap px-4 py-2 bg-card rounded-full text-green-medium text-sm font-medium shadow-soft">
+              <span className="inline-block whitespace-nowrap px-4 py-2 bg-card rounded-full text-green-medium text-xs sm:text-sm font-medium shadow-soft">
                 CREFITO - 415623-F
               </span>
             </motion.div>
 
-            {/* Nome */}
+            {/* ↓ não quebra no mobile */}
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="font-display text-3xl sm:text-5xl lg:text-6xl text-green-dark mb-2"
+              className="font-display text-xl sm:text-4xl lg:text-6xl font-semibold text-green-dark leading-tight whitespace-nowrap"
             >
               Dra. Tayná Santos
             </motion.h1>
 
-            {/* Foco do serviço */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-base sm:text-xl text-green-medium mb-8"
+              className="text-sm sm:text-lg text-green-medium font-body font-medium"
             >
               Fisioterapia • Atendimento domiciliar
             </motion.p>
 
-            {/* Botão */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 2020 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.6 }}
+              transition={{ delay: 0.6, duration: 0.6 }}
+              className="flex justify-center"
             >
               <a
                 href={whatsappLink}
@@ -80,24 +76,27 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="flex justify-center"
-
+            className="flex justify-center lg:justify-end items-end h-full"
           >
-            <div className="relative">
+            <div className="relative flex items-end">
               <div className="absolute -inset-6 bg-rose-medium/30 blur-3xl rounded-full" />
 
+              {/* ↓ imagem bem maior no MOBILE */}
               <img
                 src={heroImage}
                 alt="Fisioterapeuta em atendimento"
                 className="
                   relative
-                  w-[230px]
+                  w-[160%]
+                  sm:w-full
+                  max-w-none
+                  sm:max-w-sm
+                  lg:max-w-lg
+                  xl:max-w-xl
                   h-auto
-                  sm:w-[300px]
-                  lg:w-[420px]
-                  xl:w-[480px]
                   object-cover
-                  mt-auto
+                  translate-y-2
+                  sm:translate-y-0
                   drop-shadow-[0_15px_35px_rgba(0,0,0,0.18)]
                 "
                 style={{ objectPosition: "center top" }}
