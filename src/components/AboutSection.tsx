@@ -44,20 +44,12 @@ const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-body text-lg mb-6 leading-relaxed">
-              Olá! Sou a <strong className="text-green-dark">Dra. Maria Silva</strong>, fisioterapeuta formada pela 
-              Universidade de São Paulo, com especialização em reabilitação neurológica e geriátrica.
+              Olá! Sou a <strong className="text-green-dark">Dra. Tayná Santos</strong>,fisioterapeuta formada pela Unigran, em 2024, atuando em Dourados – MS.
             </p>
             <p className="text-body text-lg mb-6 leading-relaxed">
-              Ao longo de mais de uma década de atuação, dediquei minha carreira a ajudar pessoas a 
-              recuperarem sua mobilidade, independência e qualidade de vida. Acredito que cada paciente 
-              é único e merece um tratamento personalizado, baseado em evidências científicas e muito 
-              carinho.
-            </p>
+              Meu trabalho é baseado em um atendimento humanizado e individualizado, focado na recuperação funcional, na qualidade de vida e no bem-estar de cada paciente.</p>
             <p className="text-body text-lg leading-relaxed">
-              Minha missão é ser sua parceira na jornada de recuperação, oferecendo suporte profissional 
-              e humano em cada etapa do processo. Juntos, vamos trabalhar para que você conquiste 
-              autonomia e bem-estar.
-            </p>
+              Acompanho você em cada etapa do tratamento com técnicas atualizadas, escuta atenta e cuidado profissional, sempre buscando mais conforto, segurança e confiança no processo de reabilitação.</p>
           </motion.div>
 
           <motion.div

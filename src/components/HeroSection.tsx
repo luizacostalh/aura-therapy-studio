@@ -1,23 +1,27 @@
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
-import heroImage from "@/assets/hero-physiotherapy.jpg";
+import heroImage from "@/assets/hero-physiotherapy.png";
 
 const HeroSection = () => {
   const whatsappNumber = "5511999999999"; // Substituir pelo número real
-  const whatsappMessage = encodeURIComponent("Olá! Gostaria de agendar uma consulta de fisioterapia.");
+  const whatsappMessage = encodeURIComponent(
+    "Olá! Gostaria de agendar uma consulta de fisioterapia."
+  );
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section className="min-h-screen bg-rose-soft relative overflow-hidden">
-      <div className="container-custom section-padding">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[80vh]">
+    <section className="min-h-[85vh] bg-rose-soft relative overflow-hidden flex items-end">
+      <div className="container-custom pt-24 pb-0 w-full">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-end">
+
           {/* Left Content */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="order-2 lg:order-1 text-center lg:text-left"
-          >
+  initial={{ opacity: 0, x: -30 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  className="order-2 lg:order-1 text-center lg:text-left flex flex-col justify-center h-full"
+>
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -53,8 +57,9 @@ const HeroSection = () => {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="text-body text-base md:text-lg mb-8 max-w-xl mx-auto lg:mx-0"
             >
-              Cuidado humanizado, reabilitação personalizada e compromisso com sua qualidade de vida. 
-              Cada passo da sua recuperação é acompanhado com dedicação e expertise.
+              Cuidado humanizado, reabilitação personalizada e compromisso com sua
+              qualidade de vida. Cada passo da sua recuperação é acompanhado com
+              dedicação e expertise.
             </motion.p>
 
             <motion.div
@@ -82,11 +87,23 @@ const HeroSection = () => {
             className="order-1 lg:order-2 flex justify-center lg:justify-end"
           >
             <div className="relative">
-              <div className="absolute -inset-4 bg-rose-medium/30 rounded-3xl blur-2xl" />
+              {/* glow suave atrás */}
+              <div className="absolute -inset-6 bg-rose-medium/30 blur-3xl rounded-full" />
+
               <img
                 src={heroImage}
                 alt="Fisioterapeuta em atendimento"
-                className="relative w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-3xl shadow-soft-lg object-cover aspect-square"
+                className="
+                  relative
+                  w-full
+                  max-w-md
+                  lg:max-w-lg
+                  xl:max-w-xl
+                  h-auto
+                  object-cover
+                  drop-shadow-[0_15px_35px_rgba(0,0,0,0.18)]
+                "
+                style={{ objectPosition: "center top" }}
               />
             </div>
           </motion.div>
@@ -95,7 +112,7 @@ const HeroSection = () => {
 
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-rose-medium/20 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 right-10 w-48 h-48 bg-rose-medium/30 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-10 w-48 h-48 bg-rose-medium/30 rounded-full blur-3xl" />
     </section>
   );
 };
