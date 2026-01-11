@@ -12,16 +12,17 @@ const HeroSection = () => {
   return (
     <section className="min-h-[85vh] bg-rose-soft relative overflow-hidden flex items-end">
       <div className="container-custom pt-24 pb-0 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-end">
+        
+        {/* GRID FORÇADO EM 2 COLUNAS NO MOBILE */}
+        <div className="grid grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-16 items-end">
 
           {/* Left Content */}
           <motion.div
-  initial={{ opacity: 0, x: -30 }}
-  animate={{ opacity: 1, x: 0 }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
-  className="order-2 lg:order-1 text-center lg:text-left flex flex-col justify-center h-full"
->
-
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="order-2 lg:order-1 text-center lg:text-left flex flex-col justify-center h-full"
+          >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -84,7 +85,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="order-1 lg:order-2 flex justify-center lg:justify-end"
+            className="order-1 lg:order-2 flex justify-end"
           >
             <div className="relative">
               {/* glow suave atrás */}
@@ -96,7 +97,9 @@ const HeroSection = () => {
                 className="
                   relative
                   w-full
-                  max-w-md
+                  max-w-[140px]
+                  sm:max-w-[180px]
+                  md:max-w-md
                   lg:max-w-lg
                   xl:max-w-xl
                   h-auto
@@ -107,6 +110,7 @@ const HeroSection = () => {
               />
             </div>
           </motion.div>
+
         </div>
       </div>
 
