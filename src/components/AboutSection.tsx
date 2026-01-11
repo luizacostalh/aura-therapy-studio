@@ -6,7 +6,7 @@ const AboutSection = () => {
     {
       icon: Award,
       title: "Experiência",
-      description: "Mais de 10 anos dedicados à reabilitação e bem-estar dos pacientes",
+      description: "Formada em 2024, com foco em técnicas modernas e baseadas em evidências científicas",
     },
     {
       icon: Heart,
@@ -15,8 +15,8 @@ const AboutSection = () => {
     },
     {
       icon: Users,
-      title: "Pacientes Atendidos",
-      description: "Centenas de vidas transformadas através da fisioterapia",
+      title: "Atendimento Personalizado",
+      description: "Acompanhamento próximo e planos de tratamento adaptados a cada paciente",
     },
   ];
 
