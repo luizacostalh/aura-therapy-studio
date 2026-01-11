@@ -11,9 +11,9 @@ const HeroSection = () => {
 
   return (
     <section className="bg-rose-soft relative overflow-hidden">
-      <div className="container-custom pt-16 sm:pt-20 lg:pt-24 pb-8 w-full">
+      <div className="container-custom pt-10 sm:pt-14 lg:pt-20 pb-0 w-full">
 
-        <div className="grid grid-cols-[1.1fr_0.9fr] lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div className="grid grid-cols-2 gap-8 lg:gap-16 items-center">
 
           {/* Left Content */}
           <motion.div
@@ -66,32 +66,12 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="flex"
             >
               <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="
-                  inline-flex
-                  items-center
-                  gap-3
-                  bg-green-dark
-                  text-card
-                  px-8
-                  py-4
-                  rounded-full
-                  font-body
-                  font-medium
-                  text-base
-                  sm:text-lg
-                  shadow-soft-lg
-                  hover:shadow-rose
-                  transition-all
-                  duration-300
-                  hover:scale-105
-                  whitespace-nowrap
-                "
+                className="inline-flex items-center gap-3 bg-green-dark text-card px-8 py-4 rounded-full font-body font-medium text-lg shadow-soft-lg hover:shadow-rose transition-all duration-300 hover:scale-105"
               >
                 <MessageCircle className="w-6 h-6" />
                 Agende sua Consulta
@@ -106,7 +86,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="flex justify-end"
           >
-            <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg">
+            <div className="relative">
               <div className="absolute -inset-6 bg-rose-medium/30 blur-3xl rounded-full" />
 
               <img
@@ -115,6 +95,9 @@ const HeroSection = () => {
                 className="
                   relative
                   w-full
+                  max-w-md
+                  lg:max-w-lg
+                  xl:max-w-xl
                   h-auto
                   object-cover
                   drop-shadow-[0_15px_35px_rgba(0,0,0,0.18)]
@@ -128,7 +111,7 @@ const HeroSection = () => {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute top-16 left-10 w-32 h-32 bg-rose-medium/20 rounded-full blur-3xl" />
+      <div className="absolute top-10 left-10 w-32 h-32 bg-rose-medium/20 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-10 w-48 h-48 bg-rose-medium/30 rounded-full blur-3xl" />
     </section>
   );
