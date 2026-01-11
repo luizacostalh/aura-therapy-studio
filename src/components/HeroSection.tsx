@@ -21,14 +21,16 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-left flex flex-col justify-center px-2 sm:px-0 space-y-4 sm:space-y-5"
+            className="text-center flex flex-col justify-center items-center px-2 sm:px-0 space-y-5"
+
           >
             {/* CREFITO */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="mb-2 sm:mb-4"
+              className="mb-3 sm:mb-4 flex justify-center"
+
             >
               <span className="inline-block whitespace-nowrap px-4 py-2 bg-card rounded-full text-green-medium text-sm font-medium shadow-soft">
                 CREFITO - 415623-F
@@ -78,7 +80,8 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="flex justify-center lg:justify-end items-center sm:items-end h-full pb-4 sm:pb-0"
+            className="flex justify-center"
+
           >
             <div className="relative">
               <div className="absolute -inset-6 bg-rose-medium/30 blur-3xl rounded-full" />
