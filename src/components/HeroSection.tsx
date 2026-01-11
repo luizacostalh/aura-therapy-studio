@@ -14,7 +14,8 @@ const HeroSection = () => {
       <div className="container-custom px-6 sm:px-8 lg:px-0 pt-16 sm:pt-20 lg:pt-14 pb-8 lg:pb-0 w-full">
 
         {/* GRID — proporção ajustada no mobile */}
-        <div className="grid grid-cols-[1.1fr_0.9fr] lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-16 items-end lg:items-center">
+        <div className="grid grid-cols-[0.9fr_1.1fr] lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-16 items-end lg:items-center">
+
 
 
           {/* Left Content */}
@@ -86,7 +87,8 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="flex justify-center lg:justify-end items-end"
+            className="flex justify-center lg:justify-end items-end h-full"
+
 
           >
             <div className="relative">
@@ -96,17 +98,18 @@ const HeroSection = () => {
                 src={heroImage}
                 alt="Fisioterapeuta em atendimento"
                 className="
-                   relative
-                  w-[240px]
-                   sm:w-[280px]
-                    lg:w-full
-                    lg:max-w-lg
-                   xl:max-w-xl
-                  h-auto
-                  object-cover
-                 mt-auto
-                 drop-shadow-[0_15px_35px_rgba(0,0,0,0.18)]
-                "
+  relative
+  w-full
+  max-w-none
+  sm:max-w-sm
+  lg:w-full
+  lg:max-w-lg
+  xl:max-w-xl
+  h-auto
+  object-cover
+  mt-auto
+  drop-shadow-[0_15px_35px_rgba(0,0,0,0.18)]
+"
                 style={{ objectPosition: "center top" }}
               />
             </div>
