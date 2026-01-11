@@ -25,7 +25,7 @@ const HeroSection = () => {
               className="mb-4"
             >
               <span className="inline-block px-4 py-2 bg-card rounded-full text-green-medium text-sm font-medium shadow-soft">
-                CREFITO-3/123456-F
+                CREFITO - 415623-F
               </span>
             </motion.div>
 
@@ -35,7 +35,7 @@ const HeroSection = () => {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-green-dark mb-6 leading-tight"
             >
-              Dra. Maria Silva
+              Dra. Tayná Santos
             </motion.h1>
 
             <motion.p

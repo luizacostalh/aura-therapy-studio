@@ -11,10 +11,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="text-center md:text-left">
             <h3 className="font-display text-2xl font-semibold text-green-dark mb-2">
-              Dra. Maria Silva
+              Dra. Tayná Santos
             </h3>
             <p className="text-green-medium font-body text-sm">
-              CREFITO-3/123456-F
+              CREFITO - 415623-F
             </p>
             <p className="text-muted-foreground font-body text-sm mt-2">
               Fisioterapeuta Especialista
@@ -46,7 +46,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-muted-foreground text-sm font-body">
-            © {new Date().getFullYear()} Dra. Maria Silva - Todos os direitos reservados
+            © {new Date().getFullYear()} Dra. Tayná Santos - Todos os direitos reservados
           </p>
         </div>
       </div>
