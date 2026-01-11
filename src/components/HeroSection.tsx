@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 import heroImage from "@/assets/hero-physiotherapy.png";
 
 const HeroSection = () => {
-  const whatsappNumber = "5511999999999"; // Substituir pelo número real
+  const whatsappNumber = "5567993391756"; // Substituir pelo número real
   const whatsappMessage = encodeURIComponent(
     "Olá! Gostaria de agendar uma consulta de fisioterapia."
   );

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MessageCircle, Phone, MapPin } from "lucide-react";
 
 const CTASection = () => {
-  const whatsappNumber = "5511999999999"; // Substituir pelo número real
+  const whatsappNumber = "5567993391756"; // Substituir pelo número real
   const whatsappMessage = encodeURIComponent("Olá! Gostaria de agendar uma consulta de fisioterapia.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -53,11 +53,11 @@ const CTASection = () => {
           >
             <div className="flex items-center gap-3">
               <Phone className="w-5 h-5" />
-              <span className="font-body">(11) 99999-9999</span>
+              <span className="font-body">(67) 99339-1756</span>
             </div>
             <div className="flex items-center gap-3">
               <MapPin className="w-5 h-5" />
-              <span className="font-body">São Paulo, SP</span>
+              <span className="font-body">Dourados, MS</span>
             </div>
           </motion.div>
         </motion.div>
