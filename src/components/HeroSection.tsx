@@ -95,7 +95,7 @@ const HeroSection = () => {
                 alt="Fisioterapeuta em atendimento"
                 className="
                   relative
-                  w-[200px]
+                  w-[250px]
                   sm:w-[280px]
                   lg:w-full
                   lg:max-w-lg
