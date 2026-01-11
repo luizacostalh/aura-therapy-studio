@@ -86,19 +86,22 @@ const HeroSection = () => {
                 src={heroImage}
                 alt="Fisioterapeuta em atendimento"
                 className="
-                  relative
-                  w-[160%]
-                  sm:w-full
-                  max-w-none
-                  sm:max-w-sm
-                  lg:max-w-lg
-                  xl:max-w-xl
-                  h-auto
-                  object-cover
-                  translate-y-2
-                  sm:translate-y-0
-                  drop-shadow-[0_15px_35px_rgba(0,0,0,0.18)]
-                "
+  relative
+  w-[160%]
+  sm:w-full
+  max-w-none
+  sm:max-w-sm
+  lg:max-w-lg
+  xl:max-w-xl
+  h-auto
+  object-cover
+  translate-y-2
+  sm:translate-y-0
+  -translate-x-6
+  sm:translate-x-0
+  drop-shadow-[0_15px_35px_rgba(0,0,0,0.18)]
+"
+
                 style={{ objectPosition: "center top" }}
               />
             </div>
