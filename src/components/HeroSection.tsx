@@ -13,8 +13,8 @@ const HeroSection = () => {
     <section className="bg-rose-soft relative overflow-hidden">
       <div className="container-custom px-6 sm:px-8 lg:px-0 pt-16 sm:pt-20 lg:pt-14 pb-8 lg:pb-0 w-full">
 
-        {/* GRID — continua 2 colunas no mobile */}
-        <div className="grid grid-cols-2 gap-4 sm:gap-8 lg:gap-16 items-center">
+        {/* GRID — proporção ajustada no mobile */}
+        <div className="grid grid-cols-[1.1fr_0.9fr] lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-16 items-center">
 
           {/* Left Content */}
           <motion.div
@@ -38,7 +38,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="font-display text-xl sm:text-4xl lg:text-6xl font-semibold text-green-dark mb-3 sm:mb-5 leading-tight"
+              className="font-display text-xl sm:text-4xl lg:text-6xl font-semibold text-green-dark mb-2 sm:mb-5 leading-tight"
             >
               Dra. Tayná Santos
             </motion.h1>
@@ -47,7 +47,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-sm sm:text-lg text-green-medium mb-2 sm:mb-4 font-body font-medium"
+              className="text-xs sm:text-lg text-green-medium mb-2 sm:mb-4 font-body font-medium"
             >
               Fisioterapeuta Especialista
             </motion.p>
@@ -56,7 +56,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.6 }}
-              className="text-xs sm:text-base md:text-lg mb-4 sm:mb-8"
+              className="text-[11px] sm:text-base md:text-lg mb-3 sm:mb-8 leading-relaxed"
             >
               Cuidado humanizado, reabilitação personalizada e compromisso com sua
               qualidade de vida. Cada passo da sua recuperação é acompanhado com
@@ -95,8 +95,8 @@ const HeroSection = () => {
                 alt="Fisioterapeuta em atendimento"
                 className="
                   relative
-                  w-[160px]
-                  sm:w-[260px]
+                  w-[200px]
+                  sm:w-[280px]
                   lg:w-full
                   lg:max-w-lg
                   xl:max-w-xl
